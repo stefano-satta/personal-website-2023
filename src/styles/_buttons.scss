@@ -1,0 +1,32 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  height: 48px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  transition: color .3s, background .3s,border .3s;
+}
+
+//  btn close
+// .btn-close {
+//     background: #e8e8ed;
+//     border-radius: 50%;
+//     color: #6e6e73;
+//     display: flex;
+//     align-items: center;
+//     height: 30px;
+//     width: 30px;
+//     outline: none;
+//     position: relative;
+//     text-align: center;
+
+//     &:after {
+//       content: 'x';
+//     }
+// }
