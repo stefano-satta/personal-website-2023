@@ -11,6 +11,7 @@ body {
 .text-grey { color: $color-grey; }
 .fw-ultra-bold { font-weight: 900 !important; }
 .fs-title-section { font-size: 4rem; }
+.fs-contact-mail { font-size: 2.5rem;}
 .link-icon {
     font-size: 1.5rem;
     color: $color-black;
@@ -18,9 +19,32 @@ body {
         color: $color-grey;
     }
 }
+.link {
+    color: $color-black;
+    text-decoration: none;
+    display: inline-block;position: relative;
+
+    &:hover {
+        color: $color-black;
+        text-decoration: underline;
+    }
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: $color-black;
+        transition: width 0.3s ease 0s, right 0.3s ease 0s;
+    }
+    &:hover::after { width: 100%; left: 0; }
+}
 
 //  background
 .bg-black { background-color: $color-black; }
+.bg-grey { background-color: $color-grey-background; }
 .bg-icon-javascript { color: $color-javascript !important; }
 .bg-icon-typescript { color: $color-typescript !important; }
 
@@ -56,8 +80,12 @@ body {
     padding: 70px 0;
 }
 
+#about-section-hero {
+    padding: 200px 0;
+}
+
 #side-projects-hero {
-    padding: 100px 0;
+    padding: 200px 0;
     margin-right: unset;
 }
 #side-projects-container {
@@ -66,4 +94,27 @@ body {
     &::-webkit-scrollbar {
         display: none;
     }
+}
+
+#contact-hero {
+
+}
+#contact-mail {
+    content: "";
+    position: absolute;
+    background-image: url('/mail-circle.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: center;
+}
+.comics:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50px;
+    border-width: 10px 10px 0;
+    border-style: solid;
+    border-color: $color-black transparent;
+    display: block;
+    width: 0;
 }

@@ -3,6 +3,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import React, {useEffect, useState} from "react";
 import NavBar from "./navbar/Navbar";
+import Footer from "@/components/common/footer/Footer";
 
 
 
@@ -34,7 +35,7 @@ const RouterLayout = ({children}: any) => {
                                 {children}
                                 {/* {isScrollToTop && <ButtonScrollTop/>} */}
                             </main>
-                        {/* <Footer/> */}
+                         <Footer/>
                     </>)
             } 
     </>)
