@@ -1,7 +1,7 @@
 body {
     font-size: 16px;
     color: $color-black;
-    font-family: 'Lato', sans-serif;
+    font-family: $font-family;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -80,7 +80,7 @@ body {
     padding: 70px 0;
 }
 
-#about-section-hero {
+#about-section-hero, #contact-hero {
     padding: 200px 0;
 }
 
@@ -96,9 +96,6 @@ body {
     }
 }
 
-#contact-hero {
-
-}
 #contact-mail {
     content: "";
     position: absolute;
@@ -117,4 +114,13 @@ body {
     border-color: $color-black transparent;
     display: block;
     width: 0;
+}
+
+.app-icon {
+    position: relative;
+    z-index: 2;
+    width: 64px;
+    margin-right: 20px;
+    border-radius: 12px;
+    box-shadow: 0 1px 2px 0 transparent;
 }

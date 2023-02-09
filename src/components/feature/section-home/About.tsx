@@ -1,9 +1,10 @@
 import {Card, Col, Row} from "react-bootstrap";
+import TitleSection from "@/components/common/title-subtitle-sections/TitleSection";
 
 const About = () => {
     return (
         <section id="about-section-hero" className="container">
-            <h2 className="fs-title-section fw-ultra-bold mb-3">What I Do.</h2>
+            <TitleSection title={'What I Do.'}/>
             <p className="fs-4 mb-3 text-grey">
                 Experience in developing, testing and
                 debugging web applications and websites

@@ -5,7 +5,7 @@ const names = [
 ]
 
 const TitleFirstHero = () => {
-    const [newName, setnewName] = useState<string>(names.at(0));
+    const [newName, setnewName] = useState<string>(names[0]);
 
     const shuffle = useCallback(() => {
         const index = Math.floor(Math.random() * names.length);

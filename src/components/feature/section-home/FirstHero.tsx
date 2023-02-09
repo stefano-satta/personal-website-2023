@@ -1,4 +1,4 @@
-import TitleFirstHero from "@/components/common/title-first-hero/TitleFirstHero";
+import TitleFirstHero from "@/components/common/title-subtitle-sections/TitleFirstHero";
 import {Button} from "react-bootstrap";
 import Link from "next/link";
 import myInfo from "@/utility/my-info";

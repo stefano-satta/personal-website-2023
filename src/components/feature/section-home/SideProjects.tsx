@@ -7,13 +7,14 @@ import cryptoTemplateImg from '../../../../public/crypto_template.png';
 import Webisite22TemplateImg from '../../../../public/website22_template.png';
 import ITongueTemplateImg from '../../../../public/itongue-template.png';
 import GoRightsTemplateImg from '../../../../public/gorights-template.png';
+import TitleSection from "@/components/common/title-subtitle-sections/TitleSection";
 
 const SideProjects = () => {
     const [cryptoProject, websiteProject, goRightsProject, iTongueProject] = SIDE_PROJECTS;
 
     return (
         <section className="overflow-hidden container" id="side-projects-hero">
-            <h2 className="fs-title-section fw-ultra-bold mb-3">Projects.</h2>
+            <TitleSection title={'Projects.'}/>
             <p className="fs-4 mb-3 text-grey">A small list of other projects chosen by me.</p>
 
             <div id="side-projects-container" className="d-flex flex-nowrap py-3 px-1 mt-5">

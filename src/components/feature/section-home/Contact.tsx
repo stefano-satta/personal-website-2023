@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 import { Col, Row} from "react-bootstrap";
 import Icon from "@/components/common/icons/Icon";
+import TitleSection from "@/components/common/title-subtitle-sections/TitleSection";
 
 
 const Contact = () => {
@@ -21,8 +22,7 @@ const Contact = () => {
 
     return (
         <section className="container py-5" id="contact-hero">
-            <h2 className="fs-title-section fw-ultra-bold mb-3">Wanna be <br />starting something
-                <br /> together ?</h2>
+            <TitleSection title={'Wanna be <br />starting something <br /> together ?</h2>'}/>
             <Row>
                 <Col xs={12} lg={6} className="mb-4">
                     <p className="text-grey my-4 fs-4">
