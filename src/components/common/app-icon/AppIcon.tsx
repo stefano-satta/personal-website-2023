@@ -1,8 +1,8 @@
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 import {PropsWithChildren} from "react";
 
 interface AppIconProps {
-    url: string;
+    url: string | StaticImageData;
     altLabel: string;
 }
 

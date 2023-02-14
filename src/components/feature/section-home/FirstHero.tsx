@@ -11,8 +11,8 @@ const FirstHero = () => {
             <p className=" text-grey fs-4 mt-5">
                 Hi! I’m <span className="text-black fw-bold">Stefano Satta</span>. <br/>
                 I am a passionate <span className="text-black fw-bold">front-end developer</span> based in Italy. <br/>
-                I have many years of experience in web app consulting. <br/>
-                I love surfing, pasta and photography.
+                Focused on building responsive front-end web applications with <br/>
+                modern technologies.
             </p>
             <Link href={`mailto:${myInfo.email}?subject=Project info. Let's talk!`}
                   passHref
