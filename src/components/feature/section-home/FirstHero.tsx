@@ -1,12 +1,11 @@
 import TitleFirstHero from "@/components/common/title-subtitle-sections/TitleFirstHero";
-import {Button} from "react-bootstrap";
 import Link from "next/link";
 import myInfo from "@/utility/my-info";
 
 const FirstHero = () => {
 
     return (
-        <section id="first-hello-hero" className="text-center">
+        <section id="first-hello-hero" className="container text-center">
             <TitleFirstHero/>
             <p className=" text-grey fs-4 mt-5">
                 Hi! I’m <span className="text-black fw-bold">Stefano Satta</span>. <br/>
