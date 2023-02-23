@@ -21,14 +21,14 @@ const Contact = () => {
 
 
     return (
-        <section className="container py-5" id="contact-hero">
+        <section className="container" id="contact-hero">
             <TitleSection title={'Wanna be <br />starting something <br /> together ?</h2>'}/>
             <Row>
                 <Col xs={12} lg={6} className="mb-4">
                     <p className="text-grey my-4 fs-4">
                         Open to new projects. <br/> If you have any question, feel free to contact me.
                     </p>
-                    <ul className="mt-4 fs-4 ps-0">
+                    <ul className="mt-5 fs-4 ps-0">
                         <li className="list-unstyled mb-2">
                             <Icon icon={'linkedin'} className="me-3"></Icon>
                             <Link href={'https://www.linkedin.com/in/stefano-satta'}
