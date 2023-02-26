@@ -9,8 +9,42 @@
   cursor: pointer;
   border: none;
   white-space: nowrap;
-  letter-spacing: 1px;
-  transition: color .3s, background .3s,border .3s;
+  transition: background .3s;
+  border-radius: 8px;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:active, &:focus, &:hover {
+    box-shadow: none !important;
+  }
+
+  &:active {
+    transform: scale(.900) !important;
+  }
+}
+
+//  btn color class
+$i: 1;
+@each $color in $buttons {
+  .btn-#{$color} {
+    background: nth($buttonColors, $i) !important;
+    color: $text-color-white;
+    border-color: unset;
+  }
+  $i: $i + 1;
+}
+
+//  btn color class - hover
+$z: 1;
+@each $color in $buttons {
+  .btn-#{$color}:hover {
+    background: nth($buttonColorsHover, $z) !important;
+    color: $text-color-white;
+    border-color: unset;
+  }
+  $z: $z + 1;
 }
 
 //  btn close

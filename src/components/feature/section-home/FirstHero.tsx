@@ -13,9 +13,9 @@ const FirstHero = () => {
                 Focused on building responsive front-end web applications with <br/>
                 modern technologies.
             </p>
-            <Link href={`mailto:${myInfo.email}?subject=Project info. Let's talk!`}
+            <Link href={`mailto:${myInfo.email}?subject=Project info.`}
                   passHref
-                  className="btn text-white bg-black mt-4">
+                  className="btn btn-black mt-4">
                 Contact Me
             </Link>
         </section>
