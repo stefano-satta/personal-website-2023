@@ -7,6 +7,7 @@ body {
 
 .cursor-pointer { cursor: pointer; }
 
+
 //  text
 .text-grey { color: $color-grey; }
 .fw-ultra-bold { font-weight: 900 !important; }
@@ -15,33 +16,13 @@ body {
 .link-icon {
     font-size: 1.5rem;
     color: $color-black;
+    
     &:hover {
         color: $color-grey;
     }
 }
-.link {
-    color: $color-black;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
+.link { @include replaceLinkUnderlineAndColor($color-black); }
 
-    &:hover {
-        color: $color-black;
-        text-decoration: underline;
-    }
-    &::after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 2px;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        background-color: $color-black;
-        transition: width 0.3s ease 0s, right 0.3s ease 0s;
-    }
-    &:hover::after { width: 100%; left: 0; }
-}
 
 //  background
 .bg-black { background-color: $color-black !important; }
@@ -49,12 +30,18 @@ body {
 .bg-icon-javascript { color: $color-javascript !important; }
 .bg-icon-typescript { color: $color-typescript !important; }
 
+
 //  navbar
 .navbar-scrolled {
     border-radius: 18px;
     padding: 1.2rem;
     transition: all .5s ease-in-out;
+
+    & .link {
+       @include replaceLinkUnderlineAndColor($color-white);
+    }
 }
+
 
 //   modal
 .modal-dialog {
@@ -75,12 +62,14 @@ body {
 .modal-body { padding: 76px; }
 .modal-content { border-radius: 18px; }
 
+
 //  badge
 .badge-outline-warning {
     border: 1px solid $color-warning !important;
     background-color: transparent !important;
     color: $color-warning;
 }
+
 
 //  sections
 #first-hello-hero {
@@ -198,7 +187,7 @@ body {
     background-size: contain;
     background-position-y: center;
 }
-.comics:after {
+.comics::after {
     content: "";
     position: absolute;
     bottom: -10px;

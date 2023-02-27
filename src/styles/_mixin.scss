@@ -1,0 +1,23 @@
+@mixin replaceLinkUnderlineAndColor($colorUnderline) {
+    color: $colorUnderline;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+
+    &:hover {color: $color-black;}
+    
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: $colorUnderline;
+        text-decoration: none;
+        transition: width 0.3s ease 0s, right 0.3s ease 0s;
+    }
+
+    &:hover::after { width: 100%; left: 0; }
+}

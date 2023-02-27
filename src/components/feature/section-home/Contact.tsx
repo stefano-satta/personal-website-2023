@@ -39,7 +39,7 @@ const Contact = () => {
                             </Link>
                         </li>
                         <li className="list-unstyled mb-2">
-                            <Icon icon={'git'} className="me-3"></Icon>
+                            <Icon icon={'github'} className="me-3"></Icon>
                             <Link href="https://github.com/stefano-satta"
                                   passHref
                                   target={'_blank'}
