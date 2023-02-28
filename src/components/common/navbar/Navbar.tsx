@@ -6,7 +6,7 @@ import Icon from "@/components/common/icons/Icon";
 import { useEffect, useState } from "react";
 import OffCanvasMenu from "./OffCanvansMenu";
 import NavbarLogo from "./NavbarLogo";
-import SocialContacts from "./SocialContacts";
+import myInfo from "@/utility/my-info";
 
 
 const NavBar = () => {
@@ -63,7 +63,13 @@ const NavBar = () => {
                             </Link>
                         </Nav.Item>
                     </Nav>
-                    <SocialContacts/>
+                    <div className="d-none d-lg-inline-flex">
+                        <Link href={`mailto:${myInfo.email}?subject=Project info.`}
+                            passHref
+                            className="btn btn-black">
+                            Hire Me!
+                        </Link>
+                    </div>
                 </Navbar.Collapse>
             </Container>
     </Navbar>
