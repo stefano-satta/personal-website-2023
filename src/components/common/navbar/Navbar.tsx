@@ -1,10 +1,8 @@
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Link from "next/link";
 import Icon from "@/components/common/icons/Icon";
-import myInfo from "@/utility/my-info";
 import { useEffect, useState } from "react";
 import OffCanvasMenu from "./OffCanvansMenu";
 import NavbarLogo from "./NavbarLogo";
