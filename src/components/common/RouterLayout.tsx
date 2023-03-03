@@ -31,7 +31,7 @@ const RouterLayout = ({children}: any) => {
                     'loader' : 
                     (<>
                         <NavBar/>
-                            <main className="position-relative">
+                            <main className="position-relative" style={{marginTop: '80px'}}>
                                 {children}
                                 {/* {isScrollToTop && <ButtonScrollTop/>} */}
                             </main>

@@ -211,3 +211,17 @@ body {
     border-radius: 12px;
     box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
 }
+
+
+//  about page
+#wall-time-hero {
+    .card {
+        height: 500px;
+        padding: 0;
+        font-size: 4rem;
+
+        img {
+            object-fit: cover;
+        }
+    }
+}

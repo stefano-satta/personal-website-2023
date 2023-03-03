@@ -50,14 +50,14 @@ const NavBar = () => {
                         </Nav.Item>
                         <Nav.Item className="me-5">
                             <Link className={`link ${nbScrolledClass ? 'text-white' : 'text-black'}`} 
-                                href={'/'} 
+                                href={'/about'} 
                                 passHref>
                                 About
                             </Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Link className={`link ${nbScrolledClass ? 'text-white' : 'text-black'}`} 
-                                href={'#contact-hero'} 
+                                href={'/#contact-hero'} 
                                 passHref>
                                 Contact
                             </Link>
