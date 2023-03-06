@@ -41,6 +41,20 @@ body {
        @include replaceLinkUnderlineAndColor($color-white);
     }
 }
+.offcanvas {
+    &:is(.bg-black) .link {
+        @include replaceLinkUnderlineAndColor($color-white);
+    }
+
+    .nav-item {
+        padding: 10px;
+
+        .link {
+            font-size: 36px;
+            color: $text-color-white;
+        }
+    }
+}
 
 
 //   modal
@@ -110,7 +124,7 @@ body {
     padding: 100px 0;
 
     .loop-element {
-        height: 170px;
+        height: 250px;
         position: relative;
         margin-left: 0px;
         margin-right: 0px;
@@ -129,7 +143,7 @@ body {
             font-size: 1.125rem;
             text-transform: none;
             font-weight: 400;
-            color: $color-grey;
+            color: $text-color-black;
         }
 
         // &::after {
@@ -149,13 +163,13 @@ body {
             width: 100vw;
             overflow: hidden;
             pointer-events: none;
-            height: 170px;
+            height: 100%;
             display: flex;
             align-items: center;
             z-index: 11;
 
             .marquee-inner {
-                -webkit-animation: sliding 30s linear infinite;
+                -webkit-animation: sliding 15s linear infinite;
                 animation: sliding 30s linear infinite;
                 width: inherit;
                 width: -moz-fit-content;
@@ -167,12 +181,16 @@ body {
                 font-size: 3rem;
 
                 span {
+                    font-size: 8vw;
                     white-space: nowrap;
                     position: relative;
                     padding-left: 40px;
                     padding-right: 40px;
                     display: flex;
                     align-items: center;
+                    -webkit-text-stroke-width: 2px;
+                    -webkit-text-stroke-color: $color-black;
+                    -webkit-text-fill-color: $color-white;
                 }
             }
         }
@@ -225,3 +243,19 @@ body {
         }
     }
 }
+
+
+// #navbar-logo {
+//     width: 166px;
+
+//     .dot ~ span {
+//         opacity: 0;
+//     }
+
+//     &:hover span {
+//         opacity: 1;
+//     }
+//     &:hover .dot {
+//         display: none;
+//     }
+// }

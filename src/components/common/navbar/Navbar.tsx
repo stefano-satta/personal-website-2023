@@ -37,7 +37,7 @@ const NavBar = () => {
                 </button>
                 <OffCanvasMenu isShow={isShowMenu} 
                     closeMenu={handleCloseMenu}
-                    className="d-sm-block d-lg-none"/>
+                    className="d-sm-block d-lg-none bg-black text-white w-100"/>
                 
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-auto fs-5 d-none d-lg-inline-flex">

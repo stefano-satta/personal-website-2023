@@ -17,15 +17,15 @@ const OffCanvasMenu = (props: OffCanvasMenuProps) => {
 
     return (
         <Offcanvas show={isShow} onHide={closeMenu} responsive={size} placement={placement} className={className}>
-            <Offcanvas.Header closeButton>
+            <Offcanvas.Header closeButton closeVariant="white">
                 <Offcanvas.Title>
                     <NavbarLogo/>
                 </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body className="h-75">
-                <Nav className="justify-content-around align-items-center mx-auto h-50 fs-5">
+                <Nav className="justify-content-center align-items-center h-100 mx-auto fs-5">
                     <Nav.Item className="">
-                        <Link className={`link`} 
+                        <Link className={`link fw-semibold`} 
                             href={'/'} 
                             passHref
                             onClick={closeMenu}>
@@ -33,7 +33,7 @@ const OffCanvasMenu = (props: OffCanvasMenuProps) => {
                         </Link>
                     </Nav.Item>
                     <Nav.Item className="">
-                        <Link className={`link`} 
+                        <Link className={`link fw-semibold`} 
                             href={'/'} 
                             passHref
                             onClick={closeMenu}>
@@ -41,7 +41,7 @@ const OffCanvasMenu = (props: OffCanvasMenuProps) => {
                         </Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Link className={`link`} 
+                        <Link className={`link fw-semibold`} 
                             href={'#contact-hero'} 
                             passHref
                             onClick={closeMenu}>

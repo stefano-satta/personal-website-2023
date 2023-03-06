@@ -1,3 +1,4 @@
+"use client"
 import { useState, useEffect } from "react";
 import { Card } from "react-bootstrap";
 import AboutWallImg from '../../../../public/about-wall-img.jpg';
@@ -19,7 +20,7 @@ const WallTimeSection = () => {
         <section id="wall-time-hero">
             <Card>
                 <Image src={AboutWallImg} alt={'about-wall-img'} fill priority/>
-                <div className="h-100 w-100 d-flex align-items-center justify-content-center position-absolute text-white text-lowercase fw-ultra-bold text-center">
+                <div suppressHydrationWarning className="h-100 w-100 d-flex align-items-center justify-content-center position-absolute text-white text-lowercase fw-ultra-bold text-center">
                     {currentTime.toLocaleTimeString('en-US', {hour: 'numeric', minute: 'numeric', hour12: true})}
                 </div>
             </Card>

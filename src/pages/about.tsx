@@ -8,7 +8,7 @@ const About: NextPage = () => {
     
     return (
         <Container className="py-5">
-            {/* <WallTimeSection/> */}
+            <WallTimeSection/>
             <TitleSection title={'What I Do.'} className="mt-5"/>
         </Container>
     )
