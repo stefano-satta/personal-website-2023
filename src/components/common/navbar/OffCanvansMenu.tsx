@@ -34,7 +34,7 @@ const OffCanvasMenu = (props: OffCanvasMenuProps) => {
                     </Nav.Item>
                     <Nav.Item className="">
                         <Link className={`link fw-semibold`} 
-                            href={'/'} 
+                            href={'/about'} 
                             passHref
                             onClick={closeMenu}>
                             About
@@ -42,7 +42,7 @@ const OffCanvasMenu = (props: OffCanvasMenuProps) => {
                     </Nav.Item>
                     <Nav.Item>
                         <Link className={`link fw-semibold`} 
-                            href={'#contact-hero'} 
+                            href={'/#contact-hero'} 
                             passHref
                             onClick={closeMenu}>
                             Contact

@@ -18,8 +18,7 @@ const TitleFirstHero = () => {
     }, [shuffle])
 
     return (
-        <h1 className="fw-ultra-bold text-center"
-            style={{fontSize: 'clamp(60px, 17.7464788732px + 8.4507042254vw, 180px)'}}>
+        <h1 className="fw-ultra-bold text-center fs-title-mega">
             {newName}
         </h1>
     )
