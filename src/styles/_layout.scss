@@ -267,6 +267,46 @@ body {
     }
 }
 
+#media-section {
+    .carousel {
+        height: 100%;
+        
+        .carousel-inner {
+            height: 100%;
+        }
+        .carousel-item {
+            height: 100%;
+        }
+    
+        img {
+            object-fit: cover;
+            position: unset !important;
+            height: 352px;
+        }
+    }
+}
+
+
+
+
+//  not-found page
+#not-found-page {
+    div:first-child {
+        font-size: 50vw;
+        opacity: .05;
+        z-index: 1;
+    }
+    div:nth-child(2), img {
+        z-index: 2;
+    }
+}
+
+
+
+.embed-widget-container {
+    background-color: red !important;
+}
+
 
 // #navbar-logo {
 //     width: 166px;

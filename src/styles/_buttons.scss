@@ -1,3 +1,5 @@
+@import 'variables';
+
 .btn {
   position: relative;
   display: inline-flex;
@@ -30,7 +32,7 @@ $i: 1;
 @each $color in $buttons {
   .btn-#{$color} {
     background: nth($buttonColors, $i) !important;
-    color: $text-color-white;
+    color: nth($buttonsTextColor, $i) !important;
     border-color: unset;
   }
   $i: $i + 1;
@@ -41,7 +43,7 @@ $z: 1;
 @each $color in $buttons {
   .btn-#{$color}:hover {
     background: nth($buttonColorsHover, $z) !important;
-    color: $text-color-white;
+    color: nth($buttonsTextColor, $z) !important;
     border-color: unset;
   }
   $z: $z + 1;

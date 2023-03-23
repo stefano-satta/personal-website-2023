@@ -5,6 +5,7 @@ $color-warning: #bf4800;
 $color-javascript: #f7df1f;
 $color-typescript: #2f74c0;
 $color-black-btn-hover: #383838;
+$color-white-btn-hover: #c7c7c7;
 $color-white: #fff;
 $font-size-title-mega: clamp(60px, 17.7465px + 8.4507vw, 180px);
 
@@ -14,6 +15,7 @@ $text-color-white: $color-white;
 $text-color-black: $color-black; 
 
 //  buttons
-$buttonColors: $color-black;
-$buttonColorsHover: $color-black-btn-hover;
-$buttons: 'black';
+$buttonColors: $color-black, $color-white;
+$buttonColorsHover: $color-black-btn-hover, $color-white-btn-hover;
+$buttonsTextColor: $text-color-white, $text-color-black;
+$buttons: 'black', 'white';
