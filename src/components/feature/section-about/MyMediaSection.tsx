@@ -9,7 +9,7 @@ import ThirdSlideImg from '../../../../public/speranza-beach.jpg';
 const MyMediaSection = () => {
     
     return (
-        <Row id="media-section" as="section" className="my-5">
+        <Row id="media-section" as="section" className="py-5">
             <Col xs={12} md={6}>
                 <div className="">
                     <iframe style={{borderRadius: '18px'}} 

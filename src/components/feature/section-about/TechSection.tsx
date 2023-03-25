@@ -3,7 +3,7 @@ import { Col, Row } from "react-bootstrap";
 const TechSection = () => {
 
     return (
-        <Row className="my-5" id="tech-section" as="section">
+        <Row className="py-5" id="tech-section" as="section">
             <Col xs={12} md={6} className="fs-3">
                 <p className="mb-4">
                     Hi! My name is Stefano and I am <span className="fw-semibold">front-end developer</span> with over six years of experience
