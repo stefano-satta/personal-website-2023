@@ -1,3 +1,4 @@
+import myInfo from "@/utility/my-info";
 import Image from "next/image";
 import Link from "next/link";
 import { Col, Row, Card, Carousel } from "react-bootstrap";
@@ -5,6 +6,7 @@ import InstagramLogo from '../../../../public/logos/instagram.svg';
 import FirstSlideImg from '../../../../public/pferro-surf.jpg';
 import SecondSlideImg from '../../../../public/skate.jpg';
 import ThirdSlideImg from '../../../../public/speranza-beach.jpg';
+
 
 const MyMediaSection = () => {
     
@@ -23,7 +25,7 @@ const MyMediaSection = () => {
             </Col>
             <Col xs={12} md={6}>
                 <Card className="position-relative text-reset text-black p-0" style={{height: '352px'}}>
-                    <Link href={'https://www.instagram.com/_stefanosatta'} target={'_blank'}>
+                    <Link href={myInfo.instagram} target={'_blank'}>
                         <Image src={InstagramLogo} className="position-absolute" style={{ top: '24px', right: '24px', zIndex: 20}} width={60} alt={'instagram-logo'}/>
                     </Link>
                     

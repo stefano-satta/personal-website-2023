@@ -1,5 +1,17 @@
 export const SIDE_PROJECTS: SideProject[] = [
     {
+        name: 'My portfolio \'23',
+        description: 'My website realized in NextJS and TypeScript.',
+        category: 'Portfolio',
+        framework: 'NextJS',
+        language: 'Typescript',
+        bgIconColor: 'bg-icon-typescript',
+        date: '03-25-2023',
+        isCompleted: true,
+        github: 'https://github.com/stefano-satta',
+        siteUrl: ''
+    },
+    {
         name: 'Cryptoboard',
         description: 'A simple NextJS dashboard and news from the world of the cryptocurrencies.',
         category: 'Finance',

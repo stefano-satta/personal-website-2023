@@ -24,6 +24,12 @@ body {
     }
 }
 .link { @include replaceLinkUnderlineAndColor($color-black); }
+.gradient-red {
+    background-image: linear-gradient(90deg, $color-orange 36%, $color-fucsia 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 //  background

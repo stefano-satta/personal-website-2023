@@ -1,7 +1,14 @@
-const TitleCard = ({ title }: {title: string}) => {
+import { BaseHTMLAttributes } from "react";
+
+interface TitleCardProps extends BaseHTMLAttributes<HTMLHeadingElement> {
+    title: string;
+}
+
+
+const TitleCard = ({ title, className = '' }: TitleCardProps) => {
 
     return (
-        <h1 className="pb-2 mb-5">{title}</h1>
+        <h1 className={`pb-2 mb-5 ${className}`}>{title}</h1>
     )
 }
 

@@ -1,4 +1,7 @@
+import myInfo from "@/utility/my-info";
+import Link from "next/link";
 import { Col, Row } from "react-bootstrap";
+
 
 const TechSection = () => {
 
@@ -27,9 +30,19 @@ const TechSection = () => {
                     <li>Angular 2+</li>
                     <li>TypeScript</li>
                     <li>JavaScript</li>
-                    <li>NodeJS</li>
+                    <li>NextJS</li>
+                    <li>NodeJs</li>
                     <li>SASS</li>
+                    <li>Git</li>
                 </ul>
+                <p>
+                    For more information visit my
+                    <Link href={myInfo.linkedin} 
+                        passHref 
+                        className="ms-2 text-black text-decoration-none link">
+                            Linkedin Profile
+                    </Link>
+                </p>
             </Col>
             <Col xs={12} md={6}></Col>
         </Row>

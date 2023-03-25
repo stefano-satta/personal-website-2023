@@ -16,7 +16,6 @@ const About: NextPage = () => {
             <TechSection/>
             <MyMediaSection/>
             <ContactSection/>
-            
         </Container>
     )
 }

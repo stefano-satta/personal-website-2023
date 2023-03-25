@@ -7,7 +7,9 @@ import myInfo from "@/utility/my-info";
 import Link from "next/link";
 import { Col, Row } from "react-bootstrap";
 
+
 const ContactSection = () => {
+
     return (
         <section className="mt-5 py-5">
             <TitleSection title={'Let\'s <br/> Connect'} className="mb-5"/>
@@ -39,8 +41,6 @@ const ContactSection = () => {
                     <Blob style={{height: '350px'}}/>
                 </Col>
             </Row>
-
-
         </section>
     )
 }
