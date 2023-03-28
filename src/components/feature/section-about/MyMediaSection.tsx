@@ -14,7 +14,8 @@ const MyMediaSection = () => {
         <Row id="media-section" as="section" className="py-5">
             <Col xs={12} md={6}>
                 <div className="">
-                    <iframe style={{borderRadius: '18px'}} 
+                    <iframe style={{borderRadius: '18px'}}
+                        title="spotify-media"
                         src="https://open.spotify.com/embed/playlist/5tNNSY5IXYKlOhDDYE7tTR?utm_source=generator&theme=0" 
                         width="100%" 
                         height="352" 

@@ -7,7 +7,9 @@ import cryptoTemplateImg from '../../../../public/crypto_template.png';
 import Webisite22TemplateImg from '../../../../public/website22_template.png';
 import ITongueTemplateImg from '../../../../public/itongue-template.png';
 import GoRightsTemplateImg from '../../../../public/gorights-template.png';
+import MySite23Img from '../../../../public/mysite23.png';
 import TitleSection from "@/components/common/title-subtitle-sections/TitleSection";
+
 
 const SideProjects = () => {
     const [currentPortfolio, cryptoProject, websiteProject, goRightsProject, iTongueProject] = SIDE_PROJECTS;
@@ -21,7 +23,7 @@ const SideProjects = () => {
                 <SPCard className="bg-black text-white" infoProject={currentPortfolio}>
                     <CategoryTitleCard categoryTitle={currentPortfolio.category}/>
                     <TitleCard title={currentPortfolio.name} className="gradient-red"/>
-                    <Image src={cryptoTemplateImg} alt="portfolio_template_project" width={300} priority/>
+                    <Image src={MySite23Img} alt="portfolio_template_project" width={300} priority className="mt-5"/>
                 </SPCard>
                 <SPCard infoProject={cryptoProject}>
                     <CategoryTitleCard categoryTitle={cryptoProject.category}/>

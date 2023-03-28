@@ -1,7 +1,7 @@
 export const SIDE_PROJECTS: SideProject[] = [
     {
-        name: 'My portfolio \'23',
-        description: 'My website realized in NextJS and TypeScript.',
+        name: 'Current portfolio \'23',
+        description: 'My portfolio realized in NextJS and TypeScript.',
         category: 'Portfolio',
         framework: 'NextJS',
         language: 'Typescript',

@@ -1,6 +1,5 @@
 import Blob from "@/components/common/blob/Blob";
 import Icon from "@/components/common/icons/Icon";
-import SocialContacts from "@/components/common/navbar/SocialContacts";
 import Pill from "@/components/common/pills/Pill";
 import TitleSection from "@/components/common/title-subtitle-sections/TitleSection";
 import myInfo from "@/utility/my-info";
@@ -12,7 +11,7 @@ const ContactSection = () => {
 
     return (
         <section className="mt-5 py-5">
-            <TitleSection title={'Let\'s <br/> Connect'} className="mb-5"/>
+            <TitleSection title={'Let\'s Connect'} className="mb-4"/>
 
             <Link href={`mailto:${myInfo.email}?subject=Project info: New collaboration`}
                 passHref

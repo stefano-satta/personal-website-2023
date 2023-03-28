@@ -4,4 +4,7 @@
 
 @media screen and (max-width: 767px) {
     .fs-contact-mail { font-size: 1.5rem;}
+    [class*="col-"] {
+        margin-bottom: 15px;
+    }
   }

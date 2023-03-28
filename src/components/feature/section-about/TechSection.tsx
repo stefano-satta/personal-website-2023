@@ -36,11 +36,11 @@ const TechSection = () => {
                     <li>Git</li>
                 </ul>
                 <p>
-                    For more information visit my
+                    For more information visit my &nbsp;
                     <Link href={myInfo.linkedin} 
                         passHref 
-                        className="ms-2 text-black text-decoration-none link">
-                            Linkedin Profile
+                        className="text-black text-decoration-none link">
+                            Linkedin profile
                     </Link>
                 </p>
             </Col>

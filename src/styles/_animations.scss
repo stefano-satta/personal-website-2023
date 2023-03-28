@@ -1,12 +1,5 @@
 @keyframes sliding {
-  0% {
-    transform: matrix(1, 0, 0, 1, 0, 0);
-    opacity: 1;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-  }
-  100% {
-    transform: matrix(1, 0, 0, 1, -2609.619140625, 0);
-    opacity: 1;
+  to {
+    transform: translateX(-100%);
   }
 }
