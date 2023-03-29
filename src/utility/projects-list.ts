@@ -8,7 +8,7 @@ export const SIDE_PROJECTS: SideProject[] = [
         bgIconColor: 'bg-icon-typescript',
         date: '03-25-2023',
         isCompleted: true,
-        github: 'https://github.com/stefano-satta',
+        github: 'https://github.com/stefano-satta/personal-website-2023',
         siteUrl: ''
     },
     {

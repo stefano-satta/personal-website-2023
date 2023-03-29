@@ -10,6 +10,7 @@ import NextLogo from '../../../../public/logos/next.svg';
 import Image from "next/image";
 import ideaProductImg from '../../../../public/idea-products.jpg';
 import Link from "next/link";
+import CustomTooltip from "@/components/common/custom-tooltip/CustomTooltip";
 
 
 const About = () => {
@@ -31,11 +32,21 @@ const About = () => {
                     <Card className="d-flex flex-column">
                         <div className="fs-2 fw-semibold">Modern technologies</div>
                         <div className="d-flex justify-content-center flex-wrap mt-4">
-                            <AppIcon url={AngularLogo} altLabel={'angular_logo'} width={50}/>
-                            <AppIcon url={ReactLogo} altLabel={'react_logo'} width={50}/>
-                            <AppIcon url={NextLogo} altLabel={'next_logo'} width={60}/>
-                            <AppIcon url={JavascriptLogo} altLabel={'js_logo'}/>
-                            <AppIcon url={TypescriptLogo} altLabel={'ts_logo'}/>
+                            <CustomTooltip text="Angular">
+                                <AppIcon url={AngularLogo} altLabel={'angular_logo'} width={50}/>
+                            </CustomTooltip>
+                            <CustomTooltip text="React">
+                                <AppIcon url={ReactLogo} altLabel={'react_logo'} width={50}/>
+                            </CustomTooltip>
+                            <CustomTooltip text="NextJS">
+                                <AppIcon url={NextLogo} altLabel={'next_logo'} width={60}/>
+                            </CustomTooltip>
+                            <CustomTooltip text="JavaScript">
+                                <AppIcon url={JavascriptLogo} altLabel={'js_logo'} width={60}/>
+                            </CustomTooltip>
+                            <CustomTooltip text="TypeScript">
+                                <AppIcon url={TypescriptLogo} altLabel={'ts_logo'}/>
+                            </CustomTooltip>
                         </div>
                     </Card>
                     <Card className="bg-grey">
