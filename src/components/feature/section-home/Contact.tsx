@@ -1,24 +1,12 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { Col, Row} from "react-bootstrap";
 import Icon from "@/components/common/icons/Icon";
 import TitleSection from "@/components/common/title-subtitle-sections/TitleSection";
+import MailClipboard from '@/components/common/mail-contact-clipboard/MailClipboard';
 
 
 const Contact = () => {
-    const [showClipboard, setClipboard] = useState(false);
-
-    useEffect(() => {
-        setTimeout(() => {
-            setClipboard(false)
-        }, 3000);
-    }, [showClipboard])
-
-    const handleCopyMail = () => {
-        setClipboard(!showClipboard);
-        navigator.clipboard.writeText('stefanosatta@outlook.com')
-    }
-
 
     return (
         <section className="container" id="contact-hero">
@@ -60,19 +48,7 @@ const Contact = () => {
                     </ul>
                 </Col>
                 <Col xs={12} lg={6}>
-                    <div className="position-relative py-5 px-3 mt-5" id="contact-mail">
-                        {
-                            showClipboard &&
-                            <span className="bg-less-dark py-2 px-3 position-absolute bg-black text-white rounded-3 comics"
-                                  style={{bottom: '110px', left: '50px'}}>
-                            Mail copied! 📋
-                    </span>
-                        }
-                        <div className="cursor-pointer text-decoration-none link fs-contact-mail"
-                             onClick={handleCopyMail}>
-                            stefanosatta@outlook.com
-                        </div>
-                    </div>
+                    <MailClipboard/>
                 </Col>
             </Row>
         </section>
