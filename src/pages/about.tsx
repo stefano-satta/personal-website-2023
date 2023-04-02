@@ -12,7 +12,7 @@ const About: NextPage = () => {
     return (
         <Container className="py-5">
             <WallTimeSection/>
-            <TitleSection title={'Nice to meet <br/> you too'} className="fs-title-mega my-5"/>
+            <TitleSection title={'Nice to meet <br/> you too 🤝🏻'} className="fs-title-mega my-5 text-center"/>
             <TechSection/>
             <MyMediaSection/>
             <ContactSection/>

@@ -9,7 +9,7 @@ export const SIDE_PROJECTS: SideProject[] = [
         date: '03-25-2023',
         isCompleted: true,
         github: 'https://github.com/stefano-satta/personal-website-2023',
-        siteUrl: ''
+        siteUrl: 'https://stefanosatta.vercel.app/'
     },
     {
         name: 'Cryptoboard',
@@ -32,7 +32,7 @@ export const SIDE_PROJECTS: SideProject[] = [
         bgIconColor: 'bg-icon-javascript',
         date: '01-10-2022',
         isCompleted: true,
-        github: 'https://github.com/stefano-satta/personal-website',
+        github: 'https://github.com/stefano-satta/personal-website-2022',
         siteUrl: ''
     },
     {

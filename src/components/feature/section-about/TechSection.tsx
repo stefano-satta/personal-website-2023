@@ -13,7 +13,6 @@ import ReduxLogo from '../../../../public/logos/redux.png';
 import WebpackLogo from '../../../../public/logos/webpack.png';
 
 
-
 const TechSection = () => {
 
     return (
@@ -33,7 +32,7 @@ const TechSection = () => {
                 <p className="mb-4">
                     I like to learn and I have also acquired high level programming skills from online courses on Udemy.
                 </p>
-                <p className="mb-5">
+                <p className="mb-5 pb-5">
                     For more information visit my &nbsp;
                     <Link href={myInfo.linkedin}
                         target={"_blank"}
@@ -42,7 +41,7 @@ const TechSection = () => {
                             Linkedin profile
                     </Link>
                 </p>
-                <div className="mt-5 p-5" 
+                <div className="my-5" 
                     style={{display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', rowGap: '20px', justifyItems: 'center', alignItems: 'center'}}>
                     <div className="">
                         <CustomTooltip text="Angular">

@@ -23,7 +23,7 @@ const ContactSection = () => {
                 <Pill bgColor="light" textColor="dark" label="Pizza 🍕" className="fs-4"/>
             </Link>
 
-            <Row>
+            <Row className="pb-5">
                 <Col xs={12} md={6} className="d-flex flex-column ">
                     <p className="fw-medium my-4 fs-3 text-grey">
                         Are you minding a project together? <br />
