@@ -111,14 +111,38 @@ body {
     padding-bottom: 200px;
 }
 
-#side-projects-container {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+#slider-projects {
+    .swiper-wrapper {
+        padding: 30px 5px;
+    }
 
-    &::-webkit-scrollbar {
-        display: none;
+    .swiper-button-prev, .swiper-button-next {
+        position: absolute;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        background-color: rgba(0,0,0,.2);
+        
+        &.swiper-button-disabled {
+            pointer-events: unset !important;
+        }
+
+        &::after {
+            font-size: 1.125rem;
+            color: $color-white;
+            font-weight: 900;
+        }
     }
 }
+
+// #side-projects-container {
+//     overflow-x: auto;
+//     scroll-snap-type: x mandatory;
+
+//     &::-webkit-scrollbar {
+//         display: none;
+//     }
+// }
 
 #about-section-hero {
     .idea-project {
