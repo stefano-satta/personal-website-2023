@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Col, Row} from "react-bootstrap";
+import { Col, Container, Row} from "react-bootstrap";
 import Icon from "@/components/common/icons/Icon";
 import TitleSection from "@/components/common/title-subtitle-sections/TitleSection";
 import MailClipboard from '@/components/common/mail-contact-clipboard/MailClipboard';
@@ -9,7 +9,7 @@ import MailClipboard from '@/components/common/mail-contact-clipboard/MailClipbo
 const Contact = () => {
 
     return (
-        <section className="container" id="contact-hero">
+        <Container id="contact-hero" as="section">
             <TitleSection title={'Wanna be <br />starting something <br /> together ?</h2>'}/>
             <Row>
                 <Col xs={12} lg={6} className="mb-4">
@@ -41,7 +41,7 @@ const Contact = () => {
                     <MailClipboard/>
                 </Col>
             </Row>
-        </section>
+        </Container>
     )
 }
 

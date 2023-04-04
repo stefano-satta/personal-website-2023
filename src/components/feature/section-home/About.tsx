@@ -1,4 +1,4 @@
-import {Card, Col, Row} from "react-bootstrap";
+import {Card, Col, Container, Row} from "react-bootstrap";
 import TitleSection from "@/components/common/title-subtitle-sections/TitleSection";
 import AppIcon from "@/components/common/app-icon/AppIcon";
 import SubtitleSection from "@/components/common/title-subtitle-sections/SubtitleSection";
@@ -16,7 +16,7 @@ import CustomTooltip from "@/components/common/custom-tooltip/CustomTooltip";
 const About = () => {
 
     return (
-        <section id="about-section-hero" className="container">
+        <Container as="section" id="about-section-hero">
             <TitleSection title={'What I Do.'}/>
             <SubtitleSection subtitle={'Experience in developing, testing and debugging web applications and websites'}/>
             <p className="fs-4 text-grey">More info in <Link href={'/about'} className="link">about</Link> page</p>
@@ -57,7 +57,7 @@ const About = () => {
                     </Card>
                 </Col>
             </Row>
-        </section>
+        </Container>
     )
 }
 

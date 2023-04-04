@@ -11,13 +11,14 @@ import MySite23Img from '../../../../public/mysite23.png';
 import TitleSection from "@/components/common/title-subtitle-sections/TitleSection";
 import {Swiper, SwiperSlide} from "swiper/react";
 import { Navigation } from 'swiper';
+import { Container } from "react-bootstrap";
 
 
 const SideProjects = () => {
     const [currentPortfolio, cryptoProject, websiteProject, goRightsProject, iTongueProject] = SIDE_PROJECTS;
 
     return (
-        <section className="overflow-hidden container" id="side-projects-hero">
+        <Container className="overflow-hidden" as="section" id="side-projects-hero">
             <TitleSection title={'Projects.'}/>
             <p className="fs-4 mb-3 text-grey">A small list of other projects chosen by me.</p>
 
@@ -70,7 +71,7 @@ const SideProjects = () => {
                     </SPCard>
                 </SwiperSlide>
             </Swiper>
-        </section>
+        </Container>
     )
 }
 

@@ -2,12 +2,13 @@ import TitleFirstHero from "@/components/common/title-subtitle-sections/TitleFir
 import SocialContacts from "@/components/common/navbar/SocialContacts";
 import myInfo from "@/utility/my-info";
 import Link from "next/link";
+import { Container } from "react-bootstrap";
 
 
 const FirstHero = () => {
 
     return (
-        <section id="first-hello-hero" className="container text-center">
+        <Container as="section" id="first-hello-hero" className="text-center">
             <TitleFirstHero/>
             <p className="text-grey fs-3 mt-5">
                 Hi! I’m <strong className="text-black">Stefano Satta</strong>. <br/>
@@ -21,7 +22,7 @@ const FirstHero = () => {
                 className="btn btn-black d-lg-none mt-4">
                 Hire Me!
             </Link>
-        </section>
+        </Container>
     )
 }
 
