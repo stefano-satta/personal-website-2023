@@ -27,7 +27,7 @@ const NavBar = () => {
     }, [])
 
     return (
-        <Navbar expand="lg" fixed="top" className="py-3">
+        <Navbar expand="lg" fixed="top" className="py-3 mx-2">
             <Container className={nbScrolledClass}>
                 <NavbarLogo/>
                 <button style={{background: 'none', border: 'none'}} 

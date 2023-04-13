@@ -1,23 +1,16 @@
 import Custom404Page from "@/pages/404";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import React, {useEffect, useState} from "react";
+import React from "react";
 import NavBar from "./navbar/Navbar";
 import Footer from "@/components/common/footer/Footer";
-
+import useScrollToTop from "@/hooks/useScrollToTop";
+import ButtonScrollTop from "./button-scroll-to-top/ButtonScrollTop";
 
 
 const RouterLayout = ({children}: any) => {
-    const [loader, setLoader] = useState(false);
     const router = useRouter();
-    // const {isScrollToTop} = useScrollToTop();
-
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setLoader(false);
-    //     }, 1500);
-    // },[])
-
+    const {isScrollToTop} = useScrollToTop();
 
     return (<> 
             <Head>
@@ -26,14 +19,11 @@ const RouterLayout = ({children}: any) => {
             </Head>
             { 
                 router.pathname === '/404' ? <Custom404Page/> :
-                    loader ? 
-                    // <InitialLoader/> : 
-                    'loader' : 
                     (<>
                         <NavBar/>
                             <main className="position-relative" style={{marginTop: '80px'}}>
                                 {children}
-                                {/* {isScrollToTop && <ButtonScrollTop/>} */}
+                                {isScrollToTop && <ButtonScrollTop/>}
                             </main>
                          <Footer/>
                     </>)
