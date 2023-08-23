@@ -36,16 +36,16 @@ export const SIDE_PROJECTS: SideProject[] = [
         siteUrl: ''
     },
     {
-        name: 'GoRights',
-        description: 'An Angular SPA that it connects who wants to purchase music licenses for professional use with artists and record producers.',
-        category: 'Music Copyright',
+        name: 'Rental Car Hub',
+        description: 'A simple Angular SPA that it connects who wants to rent cars and all type of customers.',
+        category: 'Automotive',
         framework: 'Angular',
         language: 'Typescript',
         bgIconColor: 'bg-icon-typescript',
-        date: '01-10-2022',
-        isCompleted: true,
-        github: '',
-        siteUrl: 'https://www.gorights.it/'
+        date: '23-08-2023',
+        isCompleted: false,
+        github: 'https://github.com/stefano-satta/car-rental-hub',
+        siteUrl: 'https://rental-car-hub-c85f5b1eb4f7.herokuapp.com/'
     },
     {
         name: 'iTongue',

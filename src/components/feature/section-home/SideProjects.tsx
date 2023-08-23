@@ -6,7 +6,7 @@ import Image from "next/image";
 import cryptoTemplateImg from '../../../../public/crypto_template.png';
 import Website22TemplateImg from '../../../../public/website22_template.png';
 import ITongueTemplateImg from '../../../../public/itongue-template.png';
-import GoRightsTemplateImg from '../../../../public/gorights-template.png';
+import CarRentalTemplateImg from '../../../../public/car-rental.png';
 import MySite23Img from '../../../../public/mysite23.png';
 import TitleSection from "@/components/common/title-subtitle-sections/TitleSection";
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -60,7 +60,7 @@ const SideProjects = () => {
                     <SPCard className="bg-black text-white" infoProject={goRightsProject}>
                         <CategoryTitleCard categoryTitle={goRightsProject.category}/>
                         <TitleCard title={goRightsProject.name}/>
-                        <Image src={GoRightsTemplateImg} alt="music_template_project" width={320} priority/>
+                        <Image src={CarRentalTemplateImg} alt="music_template_project" width={320} priority/>
                     </SPCard>
                 </SwiperSlide>
                 <SwiperSlide>
