@@ -9,7 +9,7 @@ export const SIDE_PROJECTS: SideProject[] = [
         date: '03-25-2023',
         isCompleted: true,
         github: 'https://github.com/stefano-satta/personal-website-2023',
-        siteUrl: 'https://stefanosatta.vercel.app/'
+        siteUrl: ''
     },
     {
         name: 'Cryptoboard',
@@ -45,7 +45,7 @@ export const SIDE_PROJECTS: SideProject[] = [
         date: '23-08-2023',
         isCompleted: false,
         github: 'https://github.com/stefano-satta/car-rental-hub',
-        siteUrl: 'https://rental-car-hub-c85f5b1eb4f7.herokuapp.com/'
+        siteUrl: ''
     },
     {
         name: 'iTongue',
