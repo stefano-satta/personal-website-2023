@@ -42,21 +42,21 @@ const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-auto fs-5 d-none d-lg-inline-flex">
                         <Nav.Item className="me-5">
-                            <Link className={`link ${nbScrolledClass ? 'text-white' : 'text-black'}`} 
+                            <Link className={`link text-lowercase ${nbScrolledClass ? 'text-white' : 'text-black'}`} 
                                 href={'/'} 
                                 passHref>
                                 Home
                             </Link>
                         </Nav.Item>
                         <Nav.Item className="me-5">
-                            <Link className={`link ${nbScrolledClass ? 'text-white' : 'text-black'}`} 
+                            <Link className={`link text-lowercase ${nbScrolledClass ? 'text-white' : 'text-black'}`} 
                                 href={'/about'} 
                                 passHref>
                                 About
                             </Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Link className={`link ${nbScrolledClass ? 'text-white' : 'text-black'}`} 
+                            <Link className={`link text-lowercase ${nbScrolledClass ? 'text-white' : 'text-black'}`} 
                                 href={'/#contact-hero'} 
                                 passHref>
                                 Contact
