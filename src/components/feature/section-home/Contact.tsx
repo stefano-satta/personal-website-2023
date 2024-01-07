@@ -4,6 +4,7 @@ import { Col, Container, Row} from "react-bootstrap";
 import Icon from "@/components/common/icons/Icon";
 import TitleSection from "@/components/common/title-subtitle-sections/TitleSection";
 import MailClipboard from '@/components/common/mail-contact-clipboard/MailClipboard';
+import myInfo from '@/utility/my-info';
 
 
 const Contact = () => {
@@ -19,7 +20,7 @@ const Contact = () => {
                     <ul className="mt-5 fs-4 ps-0">
                         <li className="list-unstyled mb-2">
                             <Icon icon={'linkedin'} className="me-3"></Icon>
-                            <Link href={'https://www.linkedin.com/in/stefano-satta'}
+                            <Link href={myInfo.linkedin}
                                   passHref
                                   target="_blank"
                                   className="link text-decoration-none text-wrap">
@@ -28,11 +29,20 @@ const Contact = () => {
                         </li>
                         <li className="list-unstyled mb-2">
                             <Icon icon={'github'} className="me-3"></Icon>
-                            <Link href="https://github.com/stefano-satta"
+                            <Link href={myInfo.github}
                                   passHref
                                   target={'_blank'}
                                   className="link text-decoration-none text-wrap">
                                 GitHub profile
+                            </Link>
+                        </li>
+                        <li className="list-unstyled mb-2">
+                            <Icon icon={'file-text-fill'} className="me-3"></Icon>
+                            <Link href={myInfo.notionCV}
+                                  passHref
+                                  target={'_blank'}
+                                  className="link text-decoration-none text-wrap">
+                                Notion CV
                             </Link>
                         </li>
                     </ul>

@@ -33,7 +33,7 @@ const ContactSection = () => {
                     <ul className="mt-3 fs-4 ps-0">
                         <li className="list-unstyled mb-2">
                             <Icon icon={'linkedin'} className="me-3"></Icon>
-                            <Link href={'https://www.linkedin.com/in/stefano-satta'}
+                            <Link href={myInfo.linkedin}
                                   passHref
                                   target="_blank"
                                   className="link text-decoration-none text-wrap">
@@ -42,7 +42,7 @@ const ContactSection = () => {
                         </li>
                         <li className="list-unstyled mb-2">
                             <Icon icon={'github'} className="me-3"></Icon>
-                            <Link href="https://github.com/stefano-satta"
+                            <Link href={myInfo.github}
                                   passHref
                                   target={'_blank'}
                                   className="link text-decoration-none text-wrap">
@@ -50,8 +50,17 @@ const ContactSection = () => {
                             </Link>
                         </li>
                         <li className="list-unstyled mb-2">
+                            <Icon icon={'file-text-fill'} className="me-3"></Icon>
+                            <Link href={myInfo.notionCV}
+                                  passHref
+                                  target={'_blank'}
+                                  className="link text-decoration-none text-wrap">
+                                Notion CV
+                            </Link>
+                        </li>
+                        <li className="list-unstyled mb-2">
                             <Icon icon={'geo-alt-fill'} className="me-3"></Icon>
-                            <Link href="https://www.google.com/maps/place/Sardegna/@40.0562185,7.8577047,8z/data=!3m1!4b1!4m5!3m4!1s0x12ddc48d448d3591:0x339674b6e4ab6631!8m2!3d40.1208752!4d9.0128926?hl=it"
+                            <Link href={myInfo.sardiniaCoords}
                                   passHref
                                   target={'_blank'}
                                   className="link text-decoration-none text-wrap">
