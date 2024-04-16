@@ -2,9 +2,15 @@
     .fs-contact-mail { font-size: 2rem; }
 }
 
+@media screen and (max-width: 991px) {
+    .sliding-container {
+        .loop-element {
+            &::before { left: 3vw; }
+        }
+    }
+}
+
 @media screen and (max-width: 767px) {
     .fs-contact-mail { font-size: 1.5rem;}
-    [class*="col-"] {
-        margin-bottom: 15px;
-    }
-  }
+    [class*="col-"] { margin-bottom: 15px; }
+}

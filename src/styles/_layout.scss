@@ -3,6 +3,8 @@ body {
     color: $color-black;
     font-family: $font-family;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
 }
 
@@ -161,8 +163,8 @@ body {
     .loop-element {
         height: 250px;
         position: relative;
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 0;
+        margin-right: 0;
         overflow: hidden;
 
         &:hover .marquee-inner {
@@ -178,14 +180,15 @@ body {
             font-size: 2.125rem;
             text-transform: none;
             font-weight: 400;
-            color: $text-color-black;
+            color: $text-color-white;
         }
 
         .marquee-inner {
             display: inline-block;
             white-space: nowrap;
-            animation: sliding 20s infinite linear;
+            animation: sliding 45s infinite linear;
             padding-left: 100%;
+            margin-top: 2rem;
 
             span {
                 font-size: 8rem;
@@ -194,9 +197,11 @@ body {
                 padding-left: 40px;
                 padding-right: 40px;
                 display: inline-block;
-                -webkit-text-stroke-width: 2px;
-                -webkit-text-stroke-color: $color-black;
+                //-webkit-text-stroke-width: 2px;
+                //-webkit-text-stroke-color: $color-black;
                 -webkit-text-fill-color: $color-white;
+                text-transform: uppercase;
+                font-weight: bold;
             }
         }
     }

@@ -2,7 +2,7 @@ const SlidingWorking = () => {
 
     return (
         <section id="sliding-working-hero"
-                 className="sliding-container position-relative">
+                 className="sliding-container position-relative bg-black">
             < div className="loop-element" data-title="Worked and projects in">
                 <div className="marquee-inner">
                     <span>Accenture</span>
