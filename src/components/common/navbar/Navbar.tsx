@@ -33,7 +33,7 @@ const NavBar = () => {
                 <button style={{background: 'none', border: 'none'}} 
                     className={`d-sm-block d-lg-none ${nbScrolledClass ? 'text-white': 'text-black'}`} 
                     onClick={handleShowMenu}>
-                        <Icon icon={'list'} className="fs-2 cursor-pointer"/>
+                        <Icon icon={'fa-solid fa-bars'} className="fs-2 cursor-pointer"/>
                 </button>
                 <OffCanvasMenu isShow={isShowMenu} 
                     closeMenu={handleCloseMenu}

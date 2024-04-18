@@ -5,6 +5,7 @@ import TitleSection from "@/components/common/title-subtitle-sections/TitleSecti
 import myInfo from "@/utility/my-info";
 import Link from "next/link";
 import { Col, Row } from "react-bootstrap";
+import icon from "@/utility/icon";
 
 
 const ContactSection = () => {
@@ -32,7 +33,7 @@ const ContactSection = () => {
                     </p>
                     <ul className="mt-3 fs-4 ps-0">
                         <li className="list-unstyled mb-2">
-                            <Icon icon={'linkedin'} className="me-3"></Icon>
+                            <Icon icon={icon.linkedin} className="me-3"/>
                             <Link href={myInfo.linkedin}
                                   passHref
                                   target="_blank"
@@ -41,7 +42,7 @@ const ContactSection = () => {
                             </Link>
                         </li>
                         <li className="list-unstyled mb-2">
-                            <Icon icon={'github'} className="me-3"></Icon>
+                            <Icon icon={icon.github} className="me-3"></Icon>
                             <Link href={myInfo.github}
                                   passHref
                                   target={'_blank'}
@@ -50,7 +51,7 @@ const ContactSection = () => {
                             </Link>
                         </li>
                         <li className="list-unstyled mb-2">
-                            <Icon icon={'file-text-fill'} className="me-3"></Icon>
+                            <Icon icon={icon.cv} className="me-3"></Icon>
                             <Link href={myInfo.notionCV}
                                   passHref
                                   target={'_blank'}
@@ -59,7 +60,7 @@ const ContactSection = () => {
                             </Link>
                         </li>
                         <li className="list-unstyled mb-2">
-                            <Icon icon={'geo-alt-fill'} className="me-3"></Icon>
+                            <Icon icon={icon.location} className="me-3"></Icon>
                             <Link href={myInfo.sardiniaCoords}
                                   passHref
                                   target={'_blank'}
@@ -74,7 +75,7 @@ const ContactSection = () => {
                         passHref 
                         className="text-reset position-absolute top-50 start-50 translate-middle"
                         style={{fontSize: '5rem'}}>
-                        <Icon icon={'envelope'}/>
+                        <Icon icon={icon.mail}/>
                     </Link>
                     <Blob style={{height: '350px'}}/>
                 </Col>

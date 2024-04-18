@@ -67,3 +67,11 @@ $z: 1;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 }
+
+.social-link-black {
+  @include socialLink($color-black);
+}
+
+.social-link-white {
+  @include socialLink($color-white);
+}

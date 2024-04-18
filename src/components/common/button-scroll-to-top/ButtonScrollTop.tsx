@@ -7,10 +7,9 @@ const ButtonScrollTop = () => {
 
     return (
         <div className="cursor-pointer" id="btn-scroll-top" onClick={scrollToTop}>
-            <Icon icon={'chevron-up'} className="fs-2 text-white"/>
+            <Icon icon={'fa-solid fa-chevron-up'} className="fs-2 text-white"/>
         </div>
     )
-
 }
 
 export default ButtonScrollTop;

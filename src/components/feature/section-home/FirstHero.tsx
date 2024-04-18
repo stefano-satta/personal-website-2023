@@ -16,7 +16,7 @@ const FirstHero = () => {
                 Focused on building responsive front-end web applications with <br/>
                 modern technologies.
             </p>
-            <SocialContacts className="mt-4 d-none d-lg-block"/>
+            <SocialContacts className="mt-4 d-none d-lg-flex" socialColorLink="social-link-black"/>
             <Link href={`mailto:${myInfo.email}?subject=Project info.`}
                 passHref
                 className="btn btn-black d-lg-none mt-4">

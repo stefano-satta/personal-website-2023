@@ -8,7 +8,7 @@ interface IconProps extends HTMLAttributes<HTMLDivElement> {
 const Icon = (props: IconProps) => {
     const {icon, className = ''} = props;
 
-    return (<i className={`bi bi-${icon} ${className}`}/>)
+    return (<i className={`${icon} ${className}`}/>)
 }
 
 export default Icon;

@@ -29,7 +29,7 @@ const OffCanvasMenu = (props: OffCanvasMenuProps) => {
                             href={'/'} 
                             passHref
                             onClick={closeMenu}>
-                            Home
+                            home
                         </Link>
                     </Nav.Item>
                     <Nav.Item className="">
@@ -37,7 +37,7 @@ const OffCanvasMenu = (props: OffCanvasMenuProps) => {
                             href={'/about'} 
                             passHref
                             onClick={closeMenu}>
-                            About
+                            about
                         </Link>
                     </Nav.Item>
                     <Nav.Item>
@@ -45,12 +45,12 @@ const OffCanvasMenu = (props: OffCanvasMenuProps) => {
                             href={'/#contact-hero'} 
                             passHref
                             onClick={closeMenu}>
-                            Contact
+                            contact
                         </Link>
                     </Nav.Item>
                 </Nav>
             </Offcanvas.Body>
-            <SocialContacts className="justify-content-center py-5"/>
+            <SocialContacts className="justify-content-center py-5" socialColorLink="social-link-white"/>
       </Offcanvas>
     )
 }

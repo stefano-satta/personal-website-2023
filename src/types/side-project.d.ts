@@ -10,3 +10,12 @@ interface SideProject {
     github: string,
     siteUrl: string
 }
+
+interface IconProject {
+    mail: string,
+    linkedin: string,
+    github: string,
+    cv: string,
+    location: string,
+    scrollTop: string
+}
