@@ -5,6 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import Icon from '../icons/Icon';
 import CustomTooltip from "@/components/common/custom-tooltip/CustomTooltip";
 import {Badge, CloseButton} from "react-bootstrap";
+import icon from "@/utility/icon";
 
 interface ProjectCardProps extends HTMLAttributes<HTMLDivElement> {
     infoProject: SideProject;
@@ -46,7 +47,7 @@ const ProjectCard = (props: PropsWithChildren<ProjectCardProps>) => {
                     <p className="mt-3">{infoProject?.description}</p>
                     <div className="mt-5 d-flex justify-content-between">
                     <div>
-                        <Icon icon={'circle-fill'} 
+                        <Icon icon={icon.langCircle}
                             className={`${infoProject?.bgIconColor} me-2`}/>
                         { infoProject?.language }
                     </div>
@@ -55,7 +56,7 @@ const ProjectCard = (props: PropsWithChildren<ProjectCardProps>) => {
                             infoProject?.github &&
                             <CustomTooltip text={'GitHub project'}>
                                 <Link href={infoProject?.github} passHref target={'_blank'} className="link-icon me-3">
-                                    <Icon icon={'git'} />
+                                    <Icon icon={icon.github} />
                                 </Link>
                             </CustomTooltip>
                             
@@ -64,7 +65,7 @@ const ProjectCard = (props: PropsWithChildren<ProjectCardProps>) => {
                             infoProject?.siteUrl &&
                                 <CustomTooltip text={'Visit the site!'}>
                                     <Link href={infoProject?.siteUrl} passHref target={'_blank'} className="link-icon">
-                                        <Icon icon={'link-45deg'} />
+                                        <Icon icon={icon.link} />
                                     </Link>
                                 </CustomTooltip>
                         }   

@@ -17,5 +17,7 @@ interface IconProject {
     github: string,
     cv: string,
     location: string,
-    scrollTop: string
+    scrollTop: string,
+    link: string,
+    langCircle: string
 }
