@@ -19,7 +19,7 @@ const SocialContacts = ({className = '', socialColorLink = 'social-link-black'}:
             <Link href={myInfo.linkedin} passHref target="_blank" className={`text-reset fs-5 me-3 ${socialColorLink}`}>
                 <Icon icon={icon.linkedin}/>
             </Link>
-            <Link href={myInfo.github} passHref target="_blank" className={`text-reset fs-5 me-3 ${socialColorLink}`}>
+            <Link href={myInfo.github} passHref target="_blank" className={`text-reset fs-5 ${socialColorLink}`}>
                 <Icon icon={icon.github}/>
             </Link>
         </div>
