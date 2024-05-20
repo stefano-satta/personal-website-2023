@@ -18,7 +18,7 @@ const NavBar = () => {
     useEffect(() => {
         window.addEventListener("scroll", () => {
             if (window.pageYOffset > 50) {
-                setNbScrolledClass('navbar-scrolled bg-black text-white');
+                setNbScrolledClass('navbar-scrolled bg-black text-white rounded-pill');
             } else if (window.pageYOffset < 50) {
                 setNbScrolledClass('');
             }
@@ -42,21 +42,21 @@ const NavBar = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mx-auto fs-5 d-none d-lg-inline-flex">
                         <Nav.Item className="me-5">
-                            <Link className={`link text-lowercase ${nbScrolledClass ? 'text-white' : 'text-black'}`} 
+                            <Link className={`link text-uppercase ${nbScrolledClass ? 'text-white' : 'text-black'}`}
                                 href={'/'} 
                                 passHref>
                                 Home
                             </Link>
                         </Nav.Item>
                         <Nav.Item className="me-5">
-                            <Link className={`link text-lowercase ${nbScrolledClass ? 'text-white' : 'text-black'}`} 
+                            <Link className={`link text-uppercase ${nbScrolledClass ? 'text-white' : 'text-black'}`}
                                 href={'/about'} 
                                 passHref>
                                 About
                             </Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Link className={`link text-lowercase ${nbScrolledClass ? 'text-white' : 'text-black'}`} 
+                            <Link className={`link text-uppercase ${nbScrolledClass ? 'text-white' : 'text-black'}`}
                                 href={'/#contact-hero'} 
                                 passHref>
                                 Contact
@@ -66,7 +66,7 @@ const NavBar = () => {
                     <div className="d-none d-lg-inline-flex">
                         <Link href={`mailto:${myInfo.email}?subject=Project info.`}
                             passHref
-                            className="btn btn-black">
+                            className="btn btn-black rounded-pill">
                             Hire Me!
                         </Link>
                     </div>
