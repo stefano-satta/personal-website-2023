@@ -19,7 +19,7 @@ const About = () => {
         <Container as="section" id="about-section-hero">
             <TitleSection title={'What I Do.'}/>
             <SubtitleSection subtitle={'Experience in developing, testing and debugging web applications and websites'}/>
-            <p className="fs-4 text-grey">More info in <Link href={'/about'} className="link">about</Link> page</p>
+            <p className="fs-4">More info in <Link href={'/about'} className="link">about</Link> page</p>
 
             <Row className="py-3">
                 <Col xs="12" md="6">
@@ -51,7 +51,7 @@ const About = () => {
                     </Card>
                     <Card className="bg-grey">
                         <div className="fs-2 fw-semibold">Projects</div>
-                        <div className="fw-ultra-bold position-absolute text-grey projects-count">
+                        <div className="fw-ultra-bold position-absolute projects-count">
                             +15
                         </div>
                     </Card>

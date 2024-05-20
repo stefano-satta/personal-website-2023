@@ -20,7 +20,7 @@ const SideProjects = () => {
     return (
         <Container className="overflow-hidden" as="section" id="side-projects-hero">
             <TitleSection title={'Projects.'}/>
-            <p className="fs-4 mb-3 text-grey">A small list of other projects chosen by me.</p>
+            <p className="fs-4 mb-3">A small list of other projects chosen by me.</p>
 
             <Swiper
                 breakpoints={{

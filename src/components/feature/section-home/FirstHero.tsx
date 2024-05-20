@@ -10,7 +10,7 @@ const FirstHero = () => {
     return (
         <Container as="section" id="first-hello-hero" className="text-center">
             <TitleFirstHero/>
-            <p className="text-grey fs-3 mt-5">
+            <p className="fs-3 mt-5">
                 Hi! I’m <strong className="text-black">Stefano Satta</strong>. <br/>
                 I am a passionate <strong className="text-black">front-end developer</strong> based in Italy. <br/>
                 Focused on building responsive front-end web applications with <br/>

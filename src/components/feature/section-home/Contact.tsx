@@ -15,7 +15,7 @@ const Contact = () => {
             <TitleSection title={'Wanna be <br />starting something <br /> together ?</h2>'}/>
             <Row>
                 <Col xs={12} lg={6} className="mb-4">
-                    <p className="text-grey my-4 fs-4">
+                    <p className="my-4 fs-4">
                         Open to new projects. <br/> If you have any question, feel free to contact me.
                     </p>
                     <ul className="mt-5 fs-4 ps-0">
