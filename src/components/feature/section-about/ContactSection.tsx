@@ -11,7 +11,7 @@ import icon from "@/utility/icon";
 const ContactSection = () => {
 
     return (
-        <section className="mt-5 py-5">
+        <section className="mt-5 py-5 container">
             <TitleSection title={'Let\'s Connect'} className="mb-4"/>
 
             <Link href={`mailto:${myInfo.email}?subject=Project info: New collaboration`}
@@ -26,7 +26,7 @@ const ContactSection = () => {
 
             <Row className="pb-5">
                 <Col xs={12} md={6} className="d-flex flex-column ">
-                    <p className="fw-medium my-4 fs-3">
+                    <p className="fw-medium my-4 fs-2">
                         Are you minding a project together? <br />
                         My inbox is always open. <br />
                         I'll do my best to get back to you soon!

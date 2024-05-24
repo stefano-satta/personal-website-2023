@@ -256,26 +256,23 @@ body {
     }
 }
 
-#tech-section {
-    .tech-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        list-style: none;
+#my-services-section {
+    padding: 150px 0;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
 
-        & li {
-            margin-bottom: 8px;
-
-            &::before {
-                content: "▹";
-                padding-right: 15px;
-                color: black;
-            }
-        }
-        
+#my-self-tech-section {
+    .my-self {
+        position: absolute;
+        right: 0;
+        bottom: 56px;
     }
 }
 
 #media-section {
+    padding: 200px 0;
+
     .carousel {
         height: 100%;
         

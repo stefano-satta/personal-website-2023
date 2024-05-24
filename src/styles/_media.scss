@@ -8,6 +8,14 @@
             &::before { left: 3vw; }
         }
     }
+
+    #my-self-tech-section {
+        .my-self {
+            position: relative;
+            right: initial;
+            bottom: initial;
+        }
+    }
 }
 
 @media screen and (max-width: 767px) {

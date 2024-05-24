@@ -1,7 +1,6 @@
 import {Card, Col, Container, Row} from "react-bootstrap";
 import TitleSection from "@/components/common/title-subtitle-sections/TitleSection";
 import AppIcon from "@/components/common/app-icon/AppIcon";
-import SubtitleSection from "@/components/common/title-subtitle-sections/SubtitleSection";
 import AngularLogo from '../../../../public/logos/angular.png';
 import ReactLogo from '../../../../public/logos/react.png';
 import JavascriptLogo from '../../../../public/logos/javascript.png';
@@ -11,6 +10,7 @@ import Image from "next/image";
 import ideaProductImg from '../../../../public/idea-products.jpg';
 import Link from "next/link";
 import CustomTooltip from "@/components/common/custom-tooltip/CustomTooltip";
+import Icon from "@/components/common/icons/Icon";
 
 
 const About = () => {
@@ -18,8 +18,9 @@ const About = () => {
     return (
         <Container as="section" id="about-section-hero">
             <TitleSection title={'What I Do.'}/>
-            <SubtitleSection subtitle={'Experience in developing, testing and debugging web applications and websites'}/>
-            <p className="fs-4">More info in <Link href={'/about'} className="link">about</Link> page</p>
+            <p className="fs-2 mb-5">I help startups and companies transform <strong>ideas into projects</strong>. <br/>
+                Experience in developing, testing and debugging web applications and websites
+            </p>
 
             <Row className="py-3">
                 <Col xs="12" md="6">
@@ -55,6 +56,19 @@ const About = () => {
                             +15
                         </div>
                     </Card>
+                </Col>
+            </Row>
+            <Row>
+                <Col xs="12" lg={{span: 9, offset: 3}}>
+                    <p className="fs-1 mt-5 fw-bold">MORE OF ME?</p>
+                    <div className="d-flex align-items-center">
+                        <Link href={'/about'} className="link text-black fs-2 d-flex">Look here</Link>
+                        <div className="rounded-circle bg-black d-flex justify-content-center align-items-center flex-shrink-0 ms-3"
+                             style={{width: '60px', height: '60px'}}>
+                            <Icon icon={'fa-solid fa-arrow-down fa-lg'} className="text-white"
+                                  style={{transform: 'rotate(225deg)'}}/>
+                        </div>
+                    </div>
                 </Col>
             </Row>
         </Container>
