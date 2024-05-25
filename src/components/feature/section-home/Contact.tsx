@@ -15,10 +15,11 @@ const Contact = () => {
             <TitleSection title={'Wanna be <br />starting something <br /> together ?</h2>'}/>
             <Row>
                 <Col xs={12} lg={6} className="mb-4">
-                    <p className="my-4 fs-4">
-                        Open to new projects. <br/> If you have any question, feel free to contact me.
+                    <p className="my-4 fs-2">
+                        <strong>Now available </strong> to new projects.
                     </p>
-                    <ul className="mt-5 fs-4 ps-0">
+                    <p className="fs-2 mt-3">If you have any questions, <br/> feel free to contact me.</p>
+                    <ul className="mt-5 fs-2 ps-0">
                         <li className="list-unstyled mb-2">
                             <Icon icon={icon.linkedin} className="me-3"></Icon>
                             <Link href={myInfo.linkedin}

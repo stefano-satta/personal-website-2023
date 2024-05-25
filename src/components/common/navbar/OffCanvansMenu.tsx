@@ -3,6 +3,7 @@ import { HTMLAttributes } from "react";
 import { Nav, Offcanvas } from "react-bootstrap";
 import NavbarLogo from "./NavbarLogo";
 import SocialContacts from "./SocialContacts";
+import useCurrentDate from "@/hooks/useCurrentDate";
 
 interface OffCanvasMenuProps extends HTMLAttributes<HTMLDivElement> {
     isShow: boolean;
@@ -14,6 +15,7 @@ interface OffCanvasMenuProps extends HTMLAttributes<HTMLDivElement> {
 
 const OffCanvasMenu = (props: OffCanvasMenuProps) => {
     const {isShow, closeMenu, size = '', placement = 'end', className} = props;
+    const {getCurrentYear} = useCurrentDate();
 
     return (
         <Offcanvas show={isShow} onHide={closeMenu} responsive={size} placement={placement} className={className}>
@@ -25,33 +27,34 @@ const OffCanvasMenu = (props: OffCanvasMenuProps) => {
             <Offcanvas.Body className="h-75">
                 <Nav className="justify-content-center align-items-center h-100 mx-auto fs-5">
                     <Nav.Item className="">
-                        <Link className={`link fw-semibold`} 
-                            href={'/'} 
-                            passHref
-                            onClick={closeMenu}>
-                            home
+                        <Link className={`link fw-semibold`}
+                              href={'/'}
+                              passHref
+                              onClick={closeMenu}>
+                            HOME
                         </Link>
                     </Nav.Item>
                     <Nav.Item className="">
-                        <Link className={`link fw-semibold`} 
-                            href={'/about'} 
-                            passHref
-                            onClick={closeMenu}>
-                            about
+                        <Link className={`link fw-semibold`}
+                              href={'/about'}
+                              passHref
+                              onClick={closeMenu}>
+                            ABOUT
                         </Link>
                     </Nav.Item>
                     <Nav.Item>
-                        <Link className={`link fw-semibold`} 
-                            href={'/#contact-hero'} 
-                            passHref
-                            onClick={closeMenu}>
-                            contact
+                        <Link className={`link fw-semibold`}
+                              href={'/#contact-hero'}
+                              passHref
+                              onClick={closeMenu}>
+                            CONTACT
                         </Link>
                     </Nav.Item>
                 </Nav>
             </Offcanvas.Body>
-            <SocialContacts className="justify-content-center py-5" socialColorLink="social-link-white"/>
-      </Offcanvas>
+            <SocialContacts className="justify-content-center" socialColorLink="social-link-white"/>
+            <p className="m-0 my-3 text-center">&copy; {getCurrentYear()} Stefano Satta</p>
+        </Offcanvas>
     )
 }
 

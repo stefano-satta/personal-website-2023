@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer className="footer d-flex flex-column justify-content-center align-items-center py-4 mt-auto bg-dark text-white">
             <SocialContacts className="justify-content-center" socialColorLink="social-link-white"/>
-            <p className="m-0 mt-5">&copy; {getCurrentYear()} Stefano Satta</p>
+            <p className="m-0 mt-4">&copy; {getCurrentYear()} Stefano Satta</p>
         </footer>
     )
 }

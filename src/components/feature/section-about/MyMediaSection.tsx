@@ -24,7 +24,6 @@ const MyMediaSection = () => {
                                     src="https://open.spotify.com/embed/playlist/5tNNSY5IXYKlOhDDYE7tTR?utm_source=generator&theme=0"
                                     width="100%"
                                     height="352"
-                                    allowFullScreen
                                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                                     loading="lazy"/>
                         </div>
@@ -38,13 +37,13 @@ const MyMediaSection = () => {
                             <Carousel.Caption className="fs-2 fw-bold" style={{ zIndex: 20}}>My other passion</Carousel.Caption>
                             <Carousel controls={false} indicators={false} touch fade>
                                 <Carousel.Item interval={2000}>
-                                    <Image src={FirstSlideImg} alt={'slide-photo-surf'} fill/>
+                                    <Image src={FirstSlideImg} alt={'slide-photo-surf'} fill sizes={''}/>
                                 </Carousel.Item>
                                 <Carousel.Item interval={2000}>
-                                    <Image src={SecondSlideImg} alt={'slide-photo-skate'} fill/>
+                                    <Image src={SecondSlideImg} alt={'slide-photo-skate'} fill sizes={''}/>
                                 </Carousel.Item>
                                 <Carousel.Item interval={2000}>
-                                    <Image src={ThirdSlideImg} alt={'slide-photo-beach'} fill/>
+                                    <Image src={ThirdSlideImg} alt={'slide-photo-beach'} fill sizes={''}/>
                                 </Carousel.Item>
                             </Carousel>
                         </Card>
