@@ -16,7 +16,7 @@ const Contact = () => {
             <Row>
                 <Col xs={12} lg={6} className="mb-4">
                     <p className="my-4 fs-2">
-                        <strong>Now available </strong> to new projects.
+                        <strong className="fluo-available">Now available</strong> to new projects.
                     </p>
                     <p className="fs-2 mt-3">If you have any questions, <br/> feel free to contact me.</p>
                     <ul className="mt-5 fs-2 ps-0">
