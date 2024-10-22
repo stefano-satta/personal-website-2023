@@ -32,7 +32,7 @@ const ProjectCard = (props: PropsWithChildren<ProjectCardProps>) => {
                     <div className="d-flex justify-content-between align-items-center">
                         <div>
                             <h1>
-                                <Icon icon={'folder-fill'}/>
+                                <Icon icon={icon.projectFolder}/>
                                 <span className="ps-3">{infoProject?.name}</span>
                             </h1>
                         </div>

@@ -6,7 +6,8 @@ const icon: IconProject = {
     location: 'fa-solid fa-location-dot',
     scrollTop: 'fa-solid fa-chevron-up',
     link: 'fa-solid fa-link',
-    langCircle: 'fa-solid fa-circle'
+    langCircle: 'fa-solid fa-circle',
+    projectFolder: 'fa-solid fa-folder'
 }
 
 export default icon;

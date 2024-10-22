@@ -19,5 +19,6 @@ interface IconProject {
     location: string,
     scrollTop: string,
     link: string,
-    langCircle: string
+    langCircle: string,
+    projectFolder: string,
 }
