@@ -8,18 +8,20 @@ import OffCanvasMenu from "./OffCanvansMenu";
 import NavbarLogo from "./NavbarLogo";
 import myInfo from "@/utility/my-info";
 
+const SCROLLED_CLASS_STYLE_NAVBAR: string = 'navbar-scrolled bg-black text-white rounded-pill';
+
 
 const NavBar = () => {
-    const [nbScrolledClass, setNbScrolledClass] = useState('');
-    const [isShowMenu, setShowMenu] = useState(false);
-    const handleCloseMenu = () => setShowMenu(false);
+    const [nbScrolledClass, setNbScrolledClass] = useState<string>('');
+    const [isShowMenu, setShowMenu] = useState<boolean>(false);
+    const handleCloseMenu = () => setShowMenu(false);   
     const handleShowMenu = () => setShowMenu(true);
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if (window.pageYOffset > 50) {
-                setNbScrolledClass('navbar-scrolled bg-black text-white rounded-pill');
-            } else if (window.pageYOffset < 50) {
+            if (window.scrollY > 50) {
+                setNbScrolledClass(SCROLLED_CLASS_STYLE_NAVBAR);
+            } else if (window.scrollY < 50) {
                 setNbScrolledClass('');
             }
           });

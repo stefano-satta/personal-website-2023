@@ -4,6 +4,7 @@ import { Nav, Offcanvas } from "react-bootstrap";
 import NavbarLogo from "./NavbarLogo";
 import SocialContacts from "./SocialContacts";
 import useCurrentDate from "@/hooks/useCurrentDate";
+import myInfo from "@/utility/my-info";
 
 interface OffCanvasMenuProps extends HTMLAttributes<HTMLDivElement> {
     isShow: boolean;
@@ -53,7 +54,8 @@ const OffCanvasMenu = (props: OffCanvasMenuProps) => {
                 </Nav>
             </Offcanvas.Body>
             <SocialContacts className="justify-content-center" socialColorLink="social-link-white"/>
-            <p className="m-0 my-3 text-center">&copy; {getCurrentYear()} Stefano Satta</p>
+            <p className="m-0 mt-3 text-center">Latest update {myInfo.latestUpdate}</p>
+            <p className="m-0 text-center">&copy; {getCurrentYear()} Stefano Satta</p>
         </Offcanvas>
     )
 }
