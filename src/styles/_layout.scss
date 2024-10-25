@@ -9,6 +9,11 @@ body {
 }
 
 .cursor-pointer { cursor: pointer; }
+.centered-absolute {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 //  text

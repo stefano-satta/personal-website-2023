@@ -7,3 +7,10 @@ interface IMyInfo {
     sardiniaCoords: string;
     latestUpdate: string;
 }
+
+interface ILinksBio {
+    title: string;
+    link: string;
+    icon: string;
+    blankTarget: boolean;
+}

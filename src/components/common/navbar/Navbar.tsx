@@ -42,8 +42,7 @@ const NavBar = () => {
                     className="d-sm-block d-lg-none bg-black text-white w-100"/>
                 
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="fs-5 d-none d-lg-inline-flex" 
-                        style={{position: 'absolute', left: '50%', transform: 'translateX(-50%)'}}>
+                    <Nav className="fs-5 d-none d-lg-inline-flex centered-absolute">
                         <Nav.Item className="me-5">
                             <Link className={`link text-uppercase ${nbScrolledClass ? 'text-white' : 'text-black'}`}
                                 href={'/'} 
@@ -67,7 +66,7 @@ const NavBar = () => {
                         </Nav.Item>
                     </Nav>
                     <div className="d-none d-lg-inline-flex ms-auto">
-                        <Link href={`mailto:${myInfo.email}?subject=Project info.`}
+                        <Link href={`mailto:${myInfo.email}?subject=Project info`}
                             passHref
                             className="btn btn-black rounded-pill">
                             Hire Me!

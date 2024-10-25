@@ -21,4 +21,5 @@ interface IconProject {
     link: string,
     langCircle: string,
     projectFolder: string,
+    homepage: string
 }
