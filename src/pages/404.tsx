@@ -11,7 +11,7 @@ const Custom404Page = () => {
                 404
             </div>
             <div className="position-absolute text-center py-5 w-100 vh-100 d-flex justify-content-center align-items-center flex-column">
-                <p className='fs-title-section mb-5 fw-bold'>This page doesn't exist</p>
+                <p className='fs-title-section mb-4 fw-bold'>This page doesn't exist</p>
                 <Link href={'/'} className='btn btn-white rounded-pill'>Back Home</Link>
             </div>
             <Image src={DogImage} width={250} priority alt={'funny dog image'} className={'position-absolute bottom-0 start-50 translate-middle-x'}/>
