@@ -19,7 +19,7 @@ const FirstHero = () => {
             <SocialContacts className="mt-4 d-none d-lg-flex" socialColorLink="social-link-black"/>
             <Link href={`mailto:${myInfo.email}?subject=Project info.`}
                 passHref
-                className="btn btn-black d-lg-none mt-4">
+                className="btn btn-black d-lg-none mt-4 rounded-pill">
                 Hire Me!
             </Link>
         </Container>

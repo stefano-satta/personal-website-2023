@@ -12,9 +12,9 @@ const Links: NextPage = () => {
     const {getCurrentYear} = useCurrentDate();
 
     return (
-        <Container as="div" className="vh-100 flex flex-column justify-content-between"
-            style={{padding: '64px 16px'}}>
-            <div className="h-100 w-100 mx-auto text-center" style={{maxWidth: '580px'}}>
+        <Container as="div" className="d-flex flex-column justify-content-between min-vh-100"
+            style={{padding: '64px 16px 10px'}}>
+            <div className="h-100 w-100 mx-auto text-center mb-5" style={{maxWidth: '580px'}}>
                 <Image src={MeNotionImg} alt={'myself image'} width={200} priority/>
                 <h1 className="mt-4 fw-bold">Stefano Satta</h1>
                 <h2 className="mb-5">Front-end developer</h2>
@@ -33,7 +33,7 @@ const Links: NextPage = () => {
                     ))
                 }
             </div>
-            <div className="text-center">
+            <div className="text-center mt-5">
                 <p className="m-0">&copy; {getCurrentYear()} Stefano Satta</p>
             </div>
         </Container>
