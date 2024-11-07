@@ -16,8 +16,10 @@ const Links: NextPage = () => {
             style={{padding: '64px 16px 10px'}}>
             <div className="h-100 w-100 mx-auto text-center mb-5" style={{maxWidth: '580px'}}>
                 <Image src={MeNotionImg} alt={'myself image'} width={200} priority/>
-                <h1 className="mt-4 fw-bold">Stefano Satta</h1>
-                <h2 className="mb-5">Front-end developer</h2>
+                <h1 className="mt-4 mb-0 fw-bold" style={{fontSize: '3rem'}}>Stefano Satta</h1>
+                <h2 className="fw-medium">Front-end developer</h2>
+                <p className="mb-5 fs-5">Focused on building responsive front-end web applications with
+                modern technologies.</p>
                 {
                     LinksBio.map(( item, index) => (
                         <Link href={item.link}

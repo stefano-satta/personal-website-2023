@@ -50,9 +50,9 @@ const About = () => {
                             </CustomTooltip>
                         </div>
                     </Card>
-                    <Card className="bg-grey">
+                    <Card>
                         <div className="fs-2 fw-semibold">Projects</div>
-                        <div className="fw-ultra-bold position-absolute projects-count">
+                        <div className="fw-ultra-bold position-absolute projects-count text-grey">
                             +15
                         </div>
                     </Card>
@@ -60,7 +60,7 @@ const About = () => {
             </Row>
             <Row>
                 <Col xs="12" lg={{span: 9, offset: 3}}>
-                    <p className="fs-1 mt-5 fw-bold">MORE OF ME?</p>
+                    <p className="fs-1 mb-0 mt-5 fw-bold">MORE OF ME?</p>
                     <div className="d-flex align-items-center">
                         <Link href={'/about'} className="link text-black fs-2 d-flex">Look here</Link>
                         <div className="rounded-circle bg-black d-flex justify-content-center align-items-center flex-shrink-0 ms-3"

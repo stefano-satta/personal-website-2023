@@ -117,8 +117,13 @@ body {
     margin-top: 78px;
 }
 
-#about-section-hero, #contact-hero, #side-projects-hero {
+#about-section-hero, #contact-hero {
     padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+#side-projects-hero {
+    padding-top: 150px;
     padding-bottom: 200px;
 }
 
@@ -159,9 +164,9 @@ body {
         }
     }
     .projects-count {
-        bottom: -65px;
-        right: -14px;
-        font-size: 10rem;
+        bottom: -32px;
+        right: 12px;
+        font-size: 8rem;
     }
 }
 
@@ -333,23 +338,6 @@ body {
 }
 
 
-
 .embed-widget-container {
     background-color: red !important;
 }
-
-
-// #navbar-logo {
-//     width: 166px;
-
-//     .dot ~ span {
-//         opacity: 0;
-//     }
-
-//     &:hover span {
-//         opacity: 1;
-//     }
-//     &:hover .dot {
-//         display: none;
-//     }
-// }
