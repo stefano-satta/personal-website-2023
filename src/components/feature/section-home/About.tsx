@@ -43,7 +43,7 @@ const About = () => {
                                 <AppIcon url={NextLogo} altLabel={'next_logo'} width={60}/>
                             </CustomTooltip>
                             <CustomTooltip text="JavaScript">
-                                <AppIcon url={JavascriptLogo} altLabel={'js_logo'} width={60}/>
+                                <AppIcon url={JavascriptLogo} altLabel={'js_logo'} width={64}/>
                             </CustomTooltip>
                             <CustomTooltip text="TypeScript">
                                 <AppIcon url={TypescriptLogo} altLabel={'ts_logo'}/>

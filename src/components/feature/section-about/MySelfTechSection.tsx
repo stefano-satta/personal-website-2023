@@ -74,7 +74,7 @@ const MySelfTechSection = () => {
                             </div>
                             <div className="">
                                 <CustomTooltip text="JavaScript">
-                                    <AppIcon url={JavascriptLogo} altLabel={'js_logo'} width={60}/>
+                                    <AppIcon url={JavascriptLogo} altLabel={'js_logo'} width={64}/>
                                 </CustomTooltip>
                             </div>
                             <div className="">
