@@ -1,6 +1,6 @@
 export const SIDE_PROJECTS: SideProject[] = [
     {
-        name: 'Current portfolio \'23',
+        name: 'Current portfolio',
         description: 'My portfolio realized in NextJS and TypeScript.',
         category: 'Portfolio',
         framework: 'NextJS',
@@ -48,15 +48,15 @@ export const SIDE_PROJECTS: SideProject[] = [
         siteUrl: ''
     },
     {
-        name: 'iTongue',
-        description: 'A React App that it provides translation and meaning. Tailwind and DaisyUI for UIKit.',
-        category: 'Productivity',
-        framework: 'React',
+        name: 'iCountry',
+        description: 'A VueJS App that it provides information world countries. Tailwind UI kit.',
+        category: 'Dashboard Info',
+        framework: 'VueJS',
         language: 'Typescript',
         bgIconColor: 'bg-icon-typescript',
-        date: '10-05-2022',
+        date: '18-12-2024',
         isCompleted: false,
-        github: 'https://github.com/stefano-satta/iTongue',
-        siteUrl: 'https://stefano-satta.github.io/iTongue'
+        github: 'https://github.com/stefano-satta/icountry',
+        siteUrl: 'https://stefano-satta.github.io/icountry'
     }
 ]
