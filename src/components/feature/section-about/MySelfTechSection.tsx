@@ -7,6 +7,7 @@ import RxJSLogo from "../../../../public/logos/rxjs.png";
 import ReactLogo from "../../../../public/logos/react.png";
 import ReduxLogo from "../../../../public/logos/redux.png";
 import NextLogo from "../../../../public/logos/next.svg";
+import VueLogo from '../../../../public/logos/vuejs.png';
 import JavascriptLogo from "../../../../public/logos/javascript.png";
 import TypescriptLogo from "../../../../public/logos/typescript.png";
 import WebpackLogo from "../../../../public/logos/webpack.png";
@@ -42,7 +43,7 @@ const MySelfTechSection = () => {
                     <Col xs={12} lg={4} className="mb-5 mb-lg-0">
                         <div style={{
                             display: 'grid',
-                            gridTemplateColumns: 'repeat(4, 1fr)',
+                            gridTemplateColumns: 'repeat(3, 1fr)',
                             rowGap: '10px',
                             justifyItems: 'center',
                             alignItems: 'center'
@@ -53,23 +54,28 @@ const MySelfTechSection = () => {
                                 </CustomTooltip>
                             </div>
                             <div className="">
-                                <CustomTooltip text="RxJS">
-                                    <AppIcon url={RxJSLogo} altLabel={'rxjs_logo'} width={50}/>
-                                </CustomTooltip>
-                            </div>
-                            <div className="">
                                 <CustomTooltip text="React">
                                     <AppIcon url={ReactLogo} altLabel={'react_logo'} width={50}/>
                                 </CustomTooltip>
                             </div>
                             <div className="">
-                                <CustomTooltip text="Redux">
-                                    <AppIcon url={ReduxLogo} altLabel={'redux_logo'} width={50}/>
+                                <CustomTooltip text="VueJS">
+                                    <AppIcon url={VueLogo} altLabel={'vue_logo'} width={50}/>
+                                </CustomTooltip>
+                            </div>
+                            <div className="">
+                                <CustomTooltip text="RxJS">
+                                    <AppIcon url={RxJSLogo} altLabel={'rxjs_logo'} width={50}/>
                                 </CustomTooltip>
                             </div>
                             <div className="">
                                 <CustomTooltip text="NextJS">
                                     <AppIcon url={NextLogo} altLabel={'next_logo'} width={60}/>
+                                </CustomTooltip>
+                            </div>
+                            <div className="">
+                                <CustomTooltip text="Redux">
+                                    <AppIcon url={ReduxLogo} altLabel={'redux_logo'} width={50}/>
                                 </CustomTooltip>
                             </div>
                             <div className="">

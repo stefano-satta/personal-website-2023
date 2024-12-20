@@ -11,6 +11,7 @@ import ideaProductImg from '../../../../public/idea-products.jpg';
 import Link from "next/link";
 import CustomTooltip from "@/components/common/custom-tooltip/CustomTooltip";
 import Icon from "@/components/common/icons/Icon";
+import VueLogo from "../../../../public/logos/vuejs.png";
 
 
 const About = () => {
@@ -38,6 +39,9 @@ const About = () => {
                             </CustomTooltip>
                             <CustomTooltip text="React">
                                 <AppIcon url={ReactLogo} altLabel={'react_logo'} width={50}/>
+                            </CustomTooltip>
+                            <CustomTooltip text="VueJS">
+                                <AppIcon url={VueLogo} altLabel={'vue_logo'} width={50}/>
                             </CustomTooltip>
                             <CustomTooltip text="NextJS">
                                 <AppIcon url={NextLogo} altLabel={'next_logo'} width={60}/>
