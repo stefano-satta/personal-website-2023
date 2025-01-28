@@ -13,13 +13,24 @@ const SocialContacts = ({className = '', socialColorLink = 'social-link-black'}:
     
     return (
         <div className={`d-flex ${className}`}>
-            <Link href={`mailto:${myInfo.email}?subject=Project info.`} passHref className={`text-reset fs-5 me-3 ${socialColorLink}`}>
+            <Link href={`mailto:${myInfo.email}?subject=Project info.`}
+                  aria-label="Mail me to new collaboration!"
+                  passHref
+                  className={`text-reset fs-5 me-3 ${socialColorLink}`}>
                 <Icon icon={icon.mail}/>
             </Link>
-            <Link href={myInfo.linkedin} passHref target="_blank" className={`text-reset fs-5 me-3 ${socialColorLink}`}>
+            <Link href={myInfo.linkedin}
+                  aria-label="LinkedIn"
+                  passHref
+                  target="_blank"
+                  className={`text-reset fs-5 me-3 ${socialColorLink}`}>
                 <Icon icon={icon.linkedin}/>
             </Link>
-            <Link href={myInfo.github} passHref target="_blank" className={`text-reset fs-5 ${socialColorLink}`}>
+            <Link href={myInfo.github}
+                  aria-label="Github"
+                  passHref
+                  target="_blank"
+                  className={`text-reset fs-5 ${socialColorLink}`}>
                 <Icon icon={icon.github}/>
             </Link>
         </div>

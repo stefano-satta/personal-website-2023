@@ -32,7 +32,9 @@ const NavBar = () => {
         <Navbar expand="lg" fixed="top" className="py-3 mx-2">
             <Container className={nbScrolledClass}>
                 <NavbarLogo/>
-                <button style={{background: 'none', border: 'none'}} 
+                <button type="button"
+                    title="button-mobile-menu"
+                    style={{background: 'none', border: 'none'}}
                     className={`d-sm-block d-lg-none ${nbScrolledClass ? 'text-white': 'text-black'}`} 
                     onClick={handleShowMenu}>
                         <Icon icon={'fa-solid fa-bars'} className="fs-2 cursor-pointer"/>
