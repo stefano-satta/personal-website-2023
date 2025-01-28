@@ -15,8 +15,16 @@ const RouterLayout = ({children}: any) => {
 
     return (<> 
         <Head>
-            <title>Stefano Satta - Front-end developer</title>
+            <title>Stefano Satta | Front-end developer</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta name="description" content="I'm a passionate front-end developer based in Italy. Focused on building responsive front-end web applications with <br/>
+                modern technologies."/>
+            <meta name="og:title" content="Stefano Satta | Front-end developer"/>
+            <meta name="og:description" content="I'm a passionate front-end developer based in Italy. Focused on building responsive front-end web applications with <br/>
+                modern technologies."/>
+            <meta name="og:site_name" content="Stefano Satta"/>
+            <meta property="og:url" content="https://stefanosatta.vercel.app"/>
+            <meta property="og:locale" content="en_US"/>
         </Head>
         {
             router.pathname === '/404' ? <Custom404Page/> : router.pathname === '/links' ? <Links/> :
